@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .list1{
+            display: inline;
+            margin-left: 10%;
+            padding: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            /* border: 2px solid;
+            border-radius: 25px;
+            padding: 10px;
+            background-color: antiquewhite; */
+            color: black;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+        }
+
+        #submit{
+            width: 60px;
+            border-radius: 20px;
+            background-color: #795757;
+            color: white;
+        }
+        #book-container{
+            display: none;
+        }
+
+        .modal {
+            display: none;
+        }
+    
+        .image{
+            display: inline-block;
+        }
+
+        .maindiv{
+            position: relative;
+            width: 800px;
+            height: 400px;
+        }
+
+        .subdiv{
+            display: none;
+            width: 800px;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        ul{
+            display: inline-block;
+            margin-left: 150px;
+            padding-left: 25px;
+            list-style: none;
+        }
+
+        li{
+            padding-top: 5px;
+        }
+
+        hr{
+            border: none;
+            background-color: black;
+            height: 2px;
+            width: 1000px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons a {
+            font-size: 40px;
+            color: #000;
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);  /* Scale up icon on hover */
+            color: #0078d4;         /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header style="background-color: #ABBA7C; height: 150px;">
+            <center><h1 style="padding-top: 30px;">LIBRARY MANAGER</h1></center>
+            <center><h2 style="padding-top: 0px;">User Registration Portal</h2></center>
+
+            <!-- <ul>
+                <li class="list1"><a href="#">    Home  </a></li>
+                <li class="list1"><a href="#">New Arrivals</a></li>
+                <li class="list1"><a href="#">Genre</a></li>
+                <li class="list1"><a href="#">Category</a></li>
+            </ul> -->
+        </header>
+    </div><br><br>
+
+
+    <center>
+    <div class="maindiv">
+
+        <center><div class="subdiv">
+            <img src="slide1.avif" alt="" style="width: 800px; height: 400px;">
+        </div></center>
+
+        <center><div class="subdiv">
+            <img src="slide2.avif" alt="" style="width: 800px; height: 400px;">
+        </div></center>
+
+        <center><div class="subdiv">
+            <img src="slide3.avif" alt="" style="width: 800px; height: 400px;">
+        </div></center>
+
+        <center><div class="subdiv">
+            <img src="slide4.jfif" alt="" style="width: 800px; height: 400px;">
+        </div></center>
+
+        <center><div class="subdiv">
+            <img src="slide5.webp" alt="" style="width: 800px; height: 400px;">
+        </div></center><br>
+
+        <center><div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div></center><br><br>
+    
+    <br><br>
+    <div>
+        <a href=""><div class="image" style="margin-left: 150px;  width: 300px; height: 350px;">
+            <img src="./aadu.webp" alt="" style="height: 300px; width: 300px;">
+            <center><b>Name : Pathummayude Aadu</b><br>
+            <b>Auther : Vykom Muhammed Basheer</b></center>
+        </div></a>
+    
+        <a href=""><div class="image" style="margin-left: 50px;  width: 300px; height: 350px;">
+            <img src="ben.avif" alt="" style="height: 300px; width: 300px;">
+            <center><b>Name : Nishabdha Sancharangal</b><br>
+            <b>Auther : Benyamin</b></center>
+        </div></a>
+    
+        <a href=""><div class="image" style="margin-left: 50px;  width: 300px; height: 350px;">
+            <img src="indhulekha.webp" alt="" style="height: 300px; width: 300px;">
+            <center><b>Name : indhulekha</b><br>
+            <b>Auther : E P Rajagopalan</b></center>
+        </div></a>
+    
+        <a href=""><div class="image" style="margin-left: 150px; margin-top: 25px;  width: 300px; height: 350px;">
+            <img src="ram.jpg" alt="" style="height: 300px; width: 300px;">
+            <center><b>Name : Ram c/o Anandhi</b><br>
+            <b>Auther : Akhil P Dharmmajan</b></center>
+        </div></a>
+    
+        <a href=""><div class="image" style="margin-left: 50px;  width: 300px; height: 350px;">
+            <img src="./randamoozham.png" alt="" style="height: 300px; width: 300px;">
+            <center><b>Name : Randamuzham</b><br>
+            <b>Auther : M T Vasudevan Nair</b></center>
+        </div></a>
+        
+        <a href=""><div class="image" style="margin-left: 50px;  width: 300px; height: 350px;">
+            <img src="lib.jfif" alt="" style="height: 300px; width: 300px;">
+            <center><b></b><br>
+            <b>EXPLORE MORE</b></center>
+        </div></a><br><br>
+    </div><br>
+
+    <div>
+        <form style="display: flex; flex-direction: column; border: 0.5px solid; padding: 5px;">
+            <h2 style="border: 0.5px solid; background-color: #ABBA7C;">ADD USER</h2>
+            <h4>Name</h4>
+            <input type="text" placeholder="username" id="username1">
+            <h4>Address</h4>
+            <input type="text" placeholder="address" id="address1">
+            <h4>Date of Join</h4>
+            <input type="date" placeholder="username">
+            <h4>Book Taken</h4>
+            <input type="text" placeholder="bookname" id="book1"><br>
+            <input type="submit" name="ADD" id="submit" value="ADD" style="width: 150px; background-color: #795757; border-radius: 20px; height: 30px; color: white; margin-left: 88%;" onclick="addUser()">
+
+        </form>
+    </div><br>
+
+    <div>
+        <input type="button" onclick="viewItem()" value="View Users" style="width: 150px; background-color: #795757; border-radius: 20px; height: 30px; color: white;"><br>
+    </div>
+
+    
+
+    <div id="book-container"></div>
+
+
+   <br><br>
+
+
+   <!-- <button onclick="editItem()" style="width: 150px; background-color: #795757; border-radius: 20px; height: 30px; color: white;">Edit user</button> -->
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h1>Edit User</h1>
+            <!-- <span class="close-btn">&times;</span> -->
+            <form id="edit-form">
+                
+                
+                <div class="form-group" style="display: flex; flex-direction: column;">
+                    <label for="edit-username">User Name</label>
+                    <input type="text" id="edit-username" class="form-control" required>
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column;">
+                    <label for="edit-address" >Address</label>
+                    <!-- <input type="text" id="edit-address" class="form-control" required> -->
+                    <textarea name="" id="edit-address" class="form-control" required></textarea>
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column;">
+                    <label for="edit-book" >Book Taken</label>
+                    <!-- <textarea name="" id="edit-book" rows="7" class="form-control" required></textarea> -->
+                    <input type="text" id="edit-book" class="form-control" required>
+                </div><br>
+                <div class="button">
+                    <button type="submit" class="btn" style="height: 30px; width: 100px; border-radius: 25px;" onclick="updateUser()">Update User</button>
+                </div>
+            </form>
+        </div>
+    </div><br><br>
+
+    <script>
+        async function addUser() {
+        const username = document.getElementById('username1').value;
+        const address = document.getElementById('address1').value;
+        console.log(address);
+        const book = document.getElementById('book1').value;
+    
+
+        const response = await fetch("http://localhost:3000/api/users",{
+            method: 'POST',
+            headers: {
+                'Content-type':'application/json'
+            },
+            body: JSON.stringify({ username,address,book })
+        });
+
+        if(response.ok){
+            document.getElementById('username1').value = '';
+            document.getElementById('address1').value = '';
+            document.getElementById('book1').value = '';
+        } else{
+            console.error('Failed to add user:', response.statusText);
+        }
+    }
+
+
+    async function fetchUsers() {
+    const response = await fetch('http://localhost:3000/api/users');
+    const books = await response.json();
+    const container = document.getElementById('book-container');
+    container.innerHTML = '';
+
+
+
+// to check
+
+
+
+    books.forEach(user => {
+        const userDiv = document.createElement('div');
+        userDiv.className = 'book';
+        userDiv.id = "books"
+        userDiv.innerHTML = `<h2>${user.username}</h2>
+        <p>"${user.book}"</p>
+        <p>"${user.address}"</p>
+        <small>Posted on : ${new Date(user.date).toLocaleString()}</small>
+        <div class="button2">
+            <button class="edit-btn" onclick="openEditModal('${user._id}','${user.username}','${user.book}','${user.address}')">Edit</button>
+            <button class="delete-btn" onclick="deleteBlog('${user._id}')">Delete</button>
+        </div>`;
+        container.appendChild(userDiv);
+    });
+}
+
+window.onload = fetchUsers();
+
+function viewItem() {
+    // fetchUsers();
+  // Get all elements with the class 'book'
+  var div = document.getElementById('book-container');
+
+    if (div.style.display === 'none') {
+      div.style.display = 'block';  // Show the div
+    } else {
+      div.style.display = 'none';  // Hide the div
+    }
+  }
+
+
+  function editItem() {
+  // Get all elements with the class 'book'
+  var div = document.getElementById('editModal');
+
+    if (div.style.display === 'none') {
+      div.style.display = 'block';  // Show the div
+    } else {
+      div.style.display = 'none';  // Hide the div
+    }
+  }
+function openEditModal(id,username,book,address){
+    currentEditId = id;
+    document.getElementById('edit-username').value = username;
+    document.getElementById('edit-book').value = book;
+    document.getElementById('edit-address').value = address;
+    console.log(address);
+    document.getElementById('editModal').style.display = 'block';
+    }
+
+    async function updateUser() {
+    // e.preventDefault();
+    const username = document.getElementById('edit-username').value;
+    const address = document.getElementById('edit-address').value;
+    const book = document.getElementById('edit-book').value;
+
+
+    if(currentEditId){
+    const response = await fetch(`http://localhost:3000/api/users/${currentEditId}`,{
+        method : 'PUT',
+        headers : {
+            'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify({username, book, address})
+    });
+
+    if(response.ok){
+        fetchUsers();
+        closeModal();
+    }else {
+        console.error('Failed to update user:', response.statusText);
+    }
+    }
+
+
+    }
+        async function deleteBlog(id) {
+            const response = await fetch(`http://localhost:3000/api/users/${id}`, {
+            method: 'DELETE'
+        });
+
+    if (response.ok) {
+        fetchUsers(); 
+    } else {
+        console.error('Failed to delete blog:', response.statusText);
+    }
+    }
+
+
+    function closeModal() {
+    document.getElementById('editModal').style.display = 'none'; 
+    currentEditId = null; 
+    }
+
+    document.getElementById('edit-form').addEventListener('submit', updateUser); 
+
+    window.onload = fetchUsers; 
+    window.onclick = function(event) {
+    if (event.target === document.getElementById('editModal')) {
+        closeModal();
+    }
+    }
+
+
+    let slideIndex = 0; // Start with the first slide
+        let slides = document.getElementsByClassName("subdiv");
+        let dots = document.getElementsByClassName("dot");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; // Hide all slides
+            }
+            slideIndex++; // Move to the next slide
+            if (slideIndex > slides.length) {
+                slideIndex = 1; // If we reach the end, reset to the first slide
+            }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", ""); // Remove "active" class from all dots
+            }
+            slides[slideIndex - 1].style.display = "block"; // Show the current slide
+            dots[slideIndex - 1].className += " active"; // Set the current dot as active
+
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        showSlides(); // Call the function to start the slideshow
+    </script>
+
+
+    <footer style="background-color: #ABBA7C; height: 300px; width: 100%;">
+        <div>
+            <ul>
+                <li><h3>Rom-Com</h3></li>
+                <li>Beach Read</li>
+                <li>The Love Hypothesis</li>
+                <li>Happy Place</li>
+                <li><a href="#">More...</a></li>
+            </ul>
+
+            <ul>
+                <li><h3>Thriller</h3></li>
+                <li>Dark Matter</li>
+                <li>The Silent Patient</li>
+                <li>Coma</li>
+                <li><a href="#">More...</a></li>
+            </ul>
+
+            <ul>
+                <li><h3>Horror</h3></li>
+                <li>Dracula</li>
+                <li>Carrie</li>
+                <li>Pet Semetary</li>
+                <li><a href="#">More...</a></li>
+            </ul>
+
+            <ul>
+                <li><h3>Fiction</h3></li>
+                <li>Harry Potter</li>
+                <li>The Maid</li>
+                <li>Pride Prejudice</li>
+                <li><a href="#">More...</a></li>
+            </ul>
+
+            <hr>
+
+
+
+
+        </div>
+        <div class="social-icons">
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+    
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+    
+            <!-- Email Icon -->
+            <a href="mailto:example@example.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+    
+            <!-- WhatsApp Icon -->
+            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+    
+            <!-- Twitter Icon -->
+            <a href="https://www.twitter.com" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <center><div><h5>&copy;copyright</h5></div></center>
+    </footer>
+</body>
+</html>
